@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+:root {
+    --kolor1: hsla(210, 90%, 20%, 1);
+    --kolor2: hsla(210, 80%, 30%, 1);
+    --kolor3: hsla(210, 70%, 70%, 1);
+    --kolor4: hsla(210, 60%, 85%, 1);
+    --kolor5: hsla(210, 60%, 55%, 1);
+    --kolor6: hsla(210, 60%, 65%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    background-color: var(--kolor1);
+}
+
+main {
+    width: 65%;
+    height: 95%;
+    background-color: blanchedalmond;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+aside {
+    width: 35%;
+    height: 95%;
+    background-color: var(--kolor5);
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#tytul-wrp {
+    width: 20%;
+    height: 20vh;
+    position: absolute;
+    top: -10%;
+    left: -3%;
+}
+
+#tytul {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--kolor2);
+    display: grid;
+    place-items: center;
+}
+
+#tytul h1 {
+    margin-top: 20%;
+    font-size: 220%;
+}
+
+#dodaj {
+    width: 50%;
+    height: 65%;
+}
+
+#modyfikuj {
+    width: 50%;
+    height: 65%;
+}
+
+#usun {
+    width: 100%;
+    height: 35%;
+}
+
+#dodaj, #modyfikuj, #usun {
+    background-color: var(--kolor3);
+}
+
+#dodaj-form, #modyfikuj-form, #usun-form {
+    background-color: var(--kolor4);
+}
+
+#dodaj, #modyfikuj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#usun {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#dodaj-form, #modyfikuj-form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#modyfikuj-form {
+    height: 90%;
+}
+
+#dodaj-form button {
+    padding: 1rem;
+    background-color: limegreen;
+    border-radius: 10rem;
+    font-size: 150%;
+    color: white;
+    margin-top: -1%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: unset;
+}
+
+#dodaj-form label {
+    font-size: 130%;
+}
+
+#dodaj-form input {
+    width: 80%;
+    height: 8%;
+}
+
+#dodaj-form input[type=button] {
+    width: 40%;
+    height: 15%;
+    border-radius: 3rem;
+    border: unset;
+    font-size: 250%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+#dodaj-form input:last-of-type {
+    width: 80%;
+    height: 20%;
+}
+
+#modyfikuj-form label {
+    font-size: 150%;
+}
+
+#modyfikuj-form input {
+    width: 80%;
+    height: 8%;
+    margin-top: -5%;
+}
+
+#modyfikuj-form input:last-of-type {
+    width: 80%;
+    height: 20%;
+    margin-top: 0;
+}
+
+#modyfikuj-form input[type=checkbox] {
+    width: 2rem;
+    height: 2rem;
+    border: unset;
+    margin-top: 1%;
+}
+
+#modyfikuj-form input[type=button] {
+    width: 40%;
+    height: 15%;
+    border-radius: 3rem;
+    border: unset;
+    font-size: 250%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1%;
+}
+
+#modyfikuj-form h2 {
+    margin-top: -2%;
+    margin-bottom: 6%;
+}
+
+#modyfikuj-form h2:last-of-type {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+#modyfikuj-form h2:first-of-type {
+    margin-top: 1%;
+}
+
+#modyfikuj-form button {
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 10rem;
+    font-size: 150%;
+    color: white;
+    margin-top: 3%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: unset;
+    margin-bottom: 1%;
+}
+
+#usun-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#usun-form input[type=checkbox] {
+    width: 2rem;
+    height: 2rem;
+    border: unset;
+    margin-top: 0%;
+}
+
+#usun-form label {
+    font-size: 130%;
+}
+
+#usun-form input[type=button] {
+    width: 20%;
+    height: 24%;
+    border-radius: 3rem;
+    border: unset;
+    font-size: 250%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+#usun-form input {
+    width: 50%;
+    height: 10%;
+}
+
+#usun-form h2 {
+    margin-bottom: -1.5%;
+}
+
+#usun button {
+    padding: 1rem;
+    background-color: red;
+    border-radius: 10rem;
+    font-size: 150%;
+    color: white;
+    margin-top: 3%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: unset;
+    margin-bottom: 1%;
+}
+
+
+
+.post {
+    width: 80%;
+    height: auto;
+    min-height: 40%;
+    background-color: darkmagenta;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.p-p {
+    width: 98%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    font-size: 110%;
+}
+
+.p-tytul {
+    width: 100%;
+    height: 90%;
+    background-color: blueviolet;
+}
+
+.p-tytul h2 {
+    padding: 2%;
+    text-align: center;
+}
+
+.p-tresc {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.p-tresc p {
+    padding: 5%;
+}
+
+.invis {
+    display: none;
+}
+
+#cofnij {
+    background-color: var(--kolor6);
+}
+
+form > p {
+    margin: 2%;
+}
